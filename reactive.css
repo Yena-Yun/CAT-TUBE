@@ -1,0 +1,11 @@
+section {
+	flex-direction: column;
+}
+
+.searchbox .container {
+	display: none;
+}
+
+#secondary {
+	flex: auto;
+}

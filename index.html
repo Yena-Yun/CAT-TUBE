@@ -6,36 +6,41 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="primary.css">
+	<link rel="stylesheet" href="secondary.css">
+	<link rel="stylesheet" media="screen and (max-width: 640px)" href="reactive.css">
 	<script src="main.js" defer></script>
 	<title>(196) 얼굴천재 - Youtube</title>
 </head>
 
 <body>
 	<header>
-		<div class="start">
+		<div id="start">
 			<div class="menu-icon">
-
+				<div class="menu-svg"></div>
 			</div>
 			<div class="topbar-logo">
 				<div class="logo-svg"></div>
 			</div>
 		</div>
 
-		<div class="center">
+		<div id="center">
 			<div class="searchbox">
 				<div class="container">
 					<input type="text" class="search">
 				</div>
 				<div class="search-icon">
-					<!-- 돋보기 아이콘 -->
+					<div class="search-svg"></div>
 				</div>
 			</div>
 			<div class="voice-icon">
-				<!-- 음성 아이콘 -->
+				<div class="voice-svg"></div>
 			</div>
 		</div>
 
-		<div class="end">
+		<div id="end">
 			<div class="topbar-menu-btn create">
 				<!-- 업로드 비디오 아이콘 -->
 			</div>
@@ -52,11 +57,12 @@
 			</div>
 		</div>
 	</header>
-	<div class="container">
-		<section class="primary">
+
+	<section>
+		<div id="primary">
 
 			<div class="video">
-				<video src=""></video>
+				<video src="./얼굴천재.mp4" controls muted></video>
 			</div>
 
 			<div class="video-primary-info">
@@ -113,9 +119,9 @@
 				</div>
 				<div class="sub-description">설명</div>
 			</div>
-		</section>
+		</div>
 
-		<section class="secondary">
+		<div id="secondary">
 			<div class="related-chip-cloud">
 				<div class="chip-cloud selected">All</div>
 				<div class="chip-cloud">Domestic shord-haired cats</div>
@@ -143,8 +149,8 @@
 				</div>
 
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
 </body>
 
 </html>
