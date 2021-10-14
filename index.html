@@ -30,13 +30,16 @@
 			<div class="topbar-logo">
 				<div class="logo-svg"></div>
 			</div>
+			<span class="country-code">KR</span>
 		</div>
 
 		<div id="center">
 			<div class="searchbox">
-				<div class="container">
-					<input type="text" class="search">
-				</div>
+				<form action="" class="search-form">
+					<div class="search-container">
+						<input type="text" class="search-input" placeholder="Search">
+					</div>
+				</form>
 				<div class="search-icon">
 					<div class="search-svg"></div>
 				</div>
@@ -47,19 +50,28 @@
 		</div>
 
 		<div id="end">
-			<div class="topbar-menu-btn create">
-				<!-- 업로드 비디오 아이콘 -->
-			</div>
-			<div class="topbar-menu-btn youtube-apps">
-				<!-- 3x3 9칸 메뉴 아이콘 -->
-			</div>
-			<div class="topbar-menu-btn notifications">
-				<!-- 종 모양 아이콘 (구독 종 아이콘과 동일) -->
-				<!-- 우측상단에 notification count -->
-			</div>
-
-			<div class="avatar-btn">
-				<img src="" alt="">
+			<div class="buttons">
+				<div class="button">
+					<a>
+						<div class="svg create"></div>
+					</a>
+				</div>
+				<div class="button">
+					<a>
+						<div class="svg youtube-apps"></div>
+					</a>
+				</div>
+				<div class="button">
+					<a>
+						<div class="svg notifications"></div>
+					</a>
+				</div>
+				<!-- <div class="notification-count">9+</div> -->
+				<button class="avatar-btn">
+					<img
+						src="https://yt3.ggpht.com/yti/APfAmoFDWDOBc6BAo0jjqwBiuzrBp-bUIbO2B34ojana8w=s88-c-k-c0x00ffffff-no-rj-mo"
+						alt="">
+				</button>
 			</div>
 		</div>
 	</header>
@@ -165,7 +177,7 @@
 						</div>
 
 						<div class="add-comment">
-							<div class="input-container">
+							<div class="comment-container">
 								<input type="text" placeholder="Add a public comment...">
 							</div>
 							<div class="btn-group">
