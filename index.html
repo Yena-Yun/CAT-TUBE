@@ -5,6 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="header.css">
@@ -67,7 +70,7 @@
 				<video src="./얼굴천재.mp4" controls muted></video>
 			</div>
 
-			<div class="video-primary-info">
+			<div id="video-primary-info">
 				<h1 class="video-title">얼굴천재</h1>
 
 				<div class="video-metadata">
@@ -116,22 +119,114 @@
 				</div>
 			</div>
 
-			<div class="video-secondary-info">
-				<div class="main-info">
-					<div class="video-owner">
-						<div class="channel-profile">
+			<div id="video-secondary-info">
+				<div class="top-row">
+					<div class="channel-info">
+						<a class="channel-profile">
 							<img
 								src="https://yt3.ggpht.com/ytc/AKedOLQbBTbbsZ0kfBvktNdI5AAUiRDkJJWXCAhUy7istg=s88-c-k-c0x00ffffff-no-rj"
 								alt="channel-profile">
+						</a>
+						<div class="channel-name">
+							<p>억울이와 억수</p>
 						</div>
-						<div class="channel-name">억울이와 억수</div>
 					</div>
-					<div class="subscribe">
-						<button class="subscribe-btn"></button>
-						<button class="alarm-bell"></button>
+					<div class="subscribe-info">
+						<button class="subscribe-btn">subscribed</button>
+						<div type="submit" class="icon">
+							<div class="alarm-svg"></div>
+						</div>
 					</div>
 				</div>
-				<div class="sub-description">설명</div>
+				<div class="description-info">
+					<p>설명</p>
+				</div>
+			</div>
+
+			<div id="comments">
+				<div class="comments-header">
+					<div class="title">
+						<span>1,978</span>
+						<span>Comments</span>
+						<div class="sort">
+							<div class="sort-icon"></div>
+							<div class="sort-label">SORT BY</div>
+						</div>
+					</div>
+
+					<div class="comment-box">
+						<div class="profile-thumbnail">
+							<img src="" alt="">
+						</div>
+						<div class="add-comment">
+							<div class="input-container">
+								<input type="text">
+							</div>
+							<div class="buttons">
+								<button class="cancel-btn"></button>
+								<button class="comment-btn"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="comments-content">
+					<div class="comment-thread">
+						<div class="comment">
+							<div class="author-thumbnail">
+								<div class="profile-thumbnail">
+									<img src="" alt="">
+								</div>
+							</div>
+							<div class="comment-header">
+								<div class="pinned-comment-badge">
+									<div class="pinned-svg"></div>
+									<div class="label">
+										<span>Pinned by</span>
+										<span>억울이와 억수</span>
+									</div>
+								</div>
+								<div class="author">
+									<h3>
+										<a>
+											<span>정신병자</span>
+										</a>
+									</h3>
+									<a>1 year ago</a>
+								</div>
+							</div>
+
+							<div class="comment-content">집안에 압류딱지 붙은 얼굴이누 ㅜㅜㅜ</div>
+
+							<div class="comment-toobar">
+								<div class="button like">
+									<div class="mini-like-svg"></div>
+								</div>
+								<div class="like-count">
+									<span>13k</span>
+								</div>
+								<div class="button dislike">
+									<div class="mini-dislike-svg"></div>
+								</div>
+								<div class="creator-heart-button"></div>
+								<button class="reply-btn"></button>
+							</div>
+						</div>
+
+						<div class="comment-replies">
+							<div class="view-replies">
+								<div class="arrow-down-btn">
+									<div class="arrow-down-svg"></div>
+								</div>
+								<div class="replies-text">
+									<span>View</span>
+									<span>112</span>
+									<span>replies</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
