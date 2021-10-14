@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="header.css">
 	<link rel="stylesheet" href="primary.css">
 	<link rel="stylesheet" href="secondary.css">
+	<link rel="stylesheet" href="comments.css">
 	<link rel="stylesheet" media="screen and (max-width: 1000px)" href="reactive-1000.css">
 	<link rel="stylesheet" media="screen and (max-width: 640px)" href="reactive-640.css">
 	<link rel="stylesheet" media="screen and (max-width: 600px)" href="reactive-600.css">
@@ -66,11 +67,11 @@
 	<section>
 		<div id="primary">
 
-			<div class="video">
+			<div class="player">
 				<video src="./얼굴천재.mp4" controls muted></video>
 			</div>
 
-			<div id="video-primary-info">
+			<div id="info">
 				<h1 class="video-title">얼굴천재</h1>
 
 				<div class="video-metadata">
@@ -119,7 +120,7 @@
 				</div>
 			</div>
 
-			<div id="video-secondary-info">
+			<div id="meta">
 				<div class="top-row">
 					<div class="channel-info">
 						<a class="channel-profile">
@@ -146,25 +147,30 @@
 			<div id="comments">
 				<div class="comments-header">
 					<div class="title">
-						<span>1,978</span>
-						<span>Comments</span>
+						<h2 class="count">
+							<span>1,978</span>
+							<span>Comments</span>
+						</h2>
 						<div class="sort">
 							<div class="sort-icon"></div>
-							<div class="sort-label">SORT BY</div>
+							<div class="sort-label">sort by</div>
 						</div>
 					</div>
 
 					<div class="comment-box">
-						<div class="profile-thumbnail">
-							<img src="" alt="">
+						<div class="profile-thumbnail user">
+							<img
+								src="https://yt3.ggpht.com/yti/APfAmoFDWDOBc6BAo0jjqwBiuzrBp-bUIbO2B34ojana8w=s48-c-k-c0x00ffffff-no-rj"
+								alt="user-thumbnail">
 						</div>
+
 						<div class="add-comment">
 							<div class="input-container">
-								<input type="text">
+								<input type="text" placeholder="Add a public comment...">
 							</div>
-							<div class="buttons">
-								<button class="cancel-btn"></button>
-								<button class="comment-btn"></button>
+							<div class="btn-group">
+								<button class="cancel-btn">cancel</button>
+								<button class="comment-btn">comment</button>
 							</div>
 						</div>
 					</div>
@@ -174,8 +180,8 @@
 					<div class="comment-thread">
 						<div class="comment">
 							<div class="author-thumbnail">
-								<div class="profile-thumbnail">
-									<img src="" alt="">
+								<div class="profile-thumbnail author">
+									<img src="" alt="author-thumbnail">
 								</div>
 							</div>
 							<div class="comment-header">

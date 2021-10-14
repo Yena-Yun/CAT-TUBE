@@ -1,5 +1,4 @@
 #primary {
-	flex: 6.6;
 	padding-top: 24px;
 	padding-right: 24px;
 	margin-left: 24px;
@@ -8,16 +7,16 @@
 	flex-basis: 0.000000001px;
 }
 
-.video {
+.player {
 	width: 60vw;
 	margin: auto;
 }
 
-.video video {
+.player video {
 	width: 100%;
 }
 
-#video-primary-info {
+#info {
 	padding: 20px 0 8px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -132,7 +131,7 @@
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet' focusable='false' class='style-scope yt-icon' style='pointer-events: none; display: block; width: 100%25; height: 100%25;'%3E%3Cg class='style-scope yt-icon'%3E%3Cpath d='M7.5,12c0,0.83-0.67,1.5-1.5,1.5S4.5,12.83,4.5,12s0.67-1.5,1.5-1.5S7.5,11.17,7.5,12z M12,10.5c-0.83,0-1.5,0.67-1.5,1.5 s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5S12.83,10.5,12,10.5z M18,10.5c-0.83,0-1.5,0.67-1.5,1.5s0.67,1.5,1.5,1.5s1.5-0.67,1.5-1.5 S18.83,10.5,18,10.5z' class='style-scope yt-icon'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
-#video-secondary-info {
+#meta {
 	display: block;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	margin-bottom: 24px;
@@ -209,24 +208,4 @@
 
 .description-info p {
 	font-size: 13px;
-}
-
-.comments-header {
-	display: flex;
-	margin-bottom: 24px;
-}
-
-.comments-header span {
-	color: #030303;
-	font-size: 16px;
-}
-
-.sort {
-	display: flex;
-}
-
-.sort-icon {
-	width: 24px;
-	height: 24px;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='style-scope yt-icon' style='pointer-events:none;display:block;width:100%25;height:100%25'%3E%3Cg class='style-scope yt-icon'%3E%3Cpath d='M21 6H3V5h18v1zm-6 5H3v1h12v-1zm-6 6H3v1h6v-1z' class='style-scope yt-icon'/%3E%3C/g%3E%3C/svg%3E");
 }
