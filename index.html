@@ -8,16 +8,16 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="header.css">
-	<link rel="stylesheet" href="primary.css">
-	<link rel="stylesheet" href="secondary.css">
-	<link rel="stylesheet" href="comments.css">
-	<link rel="stylesheet" media="screen and (max-width: 1000px)" href="reactive-1000.css">
-	<link rel="stylesheet" media="screen and (max-width: 640px)" href="reactive-640.css">
-	<link rel="stylesheet" media="screen and (max-width: 600px)" href="reactive-600.css">
-	<script src="main.js" defer></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/components/header.css">
+	<link rel="stylesheet" href="css/components/primary.css">
+	<link rel="stylesheet" href="css/components/secondary.css">
+	<link rel="stylesheet" href="css/components/comments.css">
+	<link rel="stylesheet" media="screen and (max-width: 1000px)" href="css/reactive/reactive-1000.css">
+	<link rel="stylesheet" media="screen and (max-width: 640px)" href="css/reactive/reactive-640.css">
+	<link rel="stylesheet" media="screen and (max-width: 600px)" href="css/reactive/reactive-600.css">
+
 	<title>(196) 얼굴천재 - Youtube</title>
 </head>
 
@@ -36,9 +36,7 @@
 		<div id="center">
 			<div class="searchbox">
 				<form action="" class="search-form">
-					<div class="search-container">
-						<input type="text" class="search-input" placeholder="Search">
-					</div>
+					<input type="text" class="search-input" placeholder="Search">
 				</form>
 				<div class="search-icon">
 					<div class="search-svg"></div>
@@ -80,11 +78,11 @@
 		<div id="primary">
 
 			<div class="player">
-				<video src="./얼굴천재.mp4" controls muted></video>
+				<video src="./video/얼굴천재.mp4" controls></video>
 			</div>
 
-			<div id="info">
-				<h1 class="video-title">얼굴천재</h1>
+			<div class="info">
+				<h1 class="video-title">존경하는 판사님 저는 억울합니ㄷ</h1>
 
 				<div class="video-metadata">
 					<div class="view-and-date">
@@ -92,43 +90,47 @@
 						<span class="upload-date">Jan 8, 2020</span>
 					</div>
 
-					<div class="action-btns">
-						<div class="toggle-btn like">
-							<a>
-								<div class="icon like-icon">
-									<div class="like-svg"></div>
-								</div>
-								20k
-							</a>
+					<div class="action-btn-container">
+						<div class="action-btns">
+							<div class="toggle-btn like">
+								<a>
+									<div class="icon like-icon">
+										<div class="like-svg"></div>
+									</div>
+									20k
+								</a>
+							</div>
+							<div class="toggle-btn dislike">
+								<a>
+									<div class="icon dislike-icon">
+										<div class="dislike-svg"></div>
+									</div>
+									156
+								</a>
+							</div>
+							<div class="toggle-btn share">
+								<a>
+									<div class="icon share-icon">
+										<div class="share-svg"></div>
+									</div>
+									SHARE
+								</a>
+							</div>
+							<div class="toggle-btn save">
+								<a>
+									<div class="icon save-icon">
+										<div class="save-svg"></div>
+									</div>
+									SAVE
+								</a>
+							</div>
+							<div class="moreBtn">
+								<div class="more-svg"></div>
+							</div>
 						</div>
-						<div class="toggle-btn dislike">
-							<a>
-								<div class="icon dislike-icon">
-									<div class="dislike-svg"></div>
-								</div>
-								156
-							</a>
-						</div>
-						<div class="toggle-btn share">
-							<a>
-								<div class="icon share-icon">
-									<div class="share-svg"></div>
-								</div>
-								SHARE
-							</a>
-						</div>
-						<div class="toggle-btn save">
-							<a>
-								<div class="icon save-icon">
-									<div class="save-svg"></div>
-								</div>
-								SAVE
-							</a>
-						</div>
-						<div class="moreBtn">
-							<div class="more-svg"></div>
-						</div>
+						<div class="like-bars"></div>
 					</div>
+
 				</div>
 			</div>
 
@@ -321,6 +323,9 @@
 				</div>
 			</div>
 	</section>
+
+	<script src="main.js"></script>
+	<script src="bundle.js"></script>
 </body>
 
 </html>
